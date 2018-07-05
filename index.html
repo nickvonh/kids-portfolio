@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="profile">
+        <div class="thumbnail">
+        </div>
+        <h1>{{ profile.name }}</h1>
+        <h2>My Portfolio</h2>
+    </div>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        profile : {
+          name : 'Goku',
+        }
+      }
+    })
+  </script>
+</body>
+<style>
+  body{
+    background-color: #f2f2f2;
+    color: #010101
+  }
+  .thumbnail{
+    background-image: url('./assets/anime/dragonball.png');
+  }
+</style>
+</html>
